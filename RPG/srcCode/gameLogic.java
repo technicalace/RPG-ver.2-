@@ -11,6 +11,7 @@ import RPG.srcCode.biome.myBiome;
 
 public class gameLogic {
     // player variables
+
     public String plName;
     public int biomeSel, biomeNum;   
     String metName; 
@@ -69,7 +70,43 @@ public class gameLogic {
 
     public void enemySetter() {
         random rand = new random();
+
+        switch(enemyNums) {
+            case 1: 
+                System.out.println("hello");
+                break; 
+            case 2: 
+                System.out.println("how");
+                break; 
+            case 3: 
+                System.out.println("the");
+                break;
+        } 
         
+       
+
+        /*if (enemyNums == 1) {
+            System.out.println("Hello");
+        } else if (enemyNums == 2) {
+            System.out.println("how");
+        } else if (enemyNums == 3) {
+            System.out.println("Whn");
+        }*/
+
+       /*switch (rand.randNum) {
+            case 0:
+                System.out.println("Hello");
+                break; 
+            case 1: 
+                System.out.println("How");
+                break; 
+            case 2: 
+                System.out.println("are");
+                break; 
+            default: 
+                System.out.println("Something went wrong, please try again.");
+                break;
+        }*/
         /*switch (enemyNums) { // here
             case 1: 
                 enemName = metEnemy1.getEnemName();
@@ -119,18 +156,19 @@ public class gameLogic {
             System.out.println("Something went wrong");
         }*/
 
-        if (enemyNums == 1) {
+        /*if (enemyNums == 1) {
             System.out.println("Hello");
         } else if (enemyNums == 2) {
             System.out.println("There");
         } else if (enemyNums == 3) {
             System.out.println("How");
-        }
+        }*/
 
 
-        switch(enemyNums) {
-            case 1:
-                enemName = metEnemy1.getEnemName();
+        /*switch(rand.randNum) {
+            case 0:
+                System.out.println("When");
+                /*enemName = metEnemy1.getEnemName();
                 eintro = metEnemy1.intro; 
                 edesc = metEnemy1.desc; 
                 ehp = metEnemy1.hp; 
@@ -138,10 +176,11 @@ public class gameLogic {
                 edmg = metEnemy1.dmg; 
                 elvl = metEnemy1.lvl; 
                 exp = metEnemy1.xp; 
-                eisAlive = metEnemy1.isAlive; 
-                break; 
-            case 2: 
-                enemName = metEnemy2.getEnemName();
+                eisAlive = metEnemy1.isAlive; */
+                /*break; 
+            case 1: 
+                System.out.println("The");
+                /*enemName = metEnemy2.getEnemName();
                 eintro = metEnemy2.intro; 
                 edesc = metEnemy2.desc; 
                 ehp = metEnemy2.hp;
@@ -149,10 +188,11 @@ public class gameLogic {
                 edmg = metEnemy2.dmg;
                 elvl = metEnemy2.lvl; 
                 exp = metEnemy2.xp; 
-                eisAlive = metEnemy2.isAlive; 
-                break;
-            case 3: 
-                enemName = metEnemy3.getEnemName(); 
+                eisAlive = metEnemy2.isAlive; */
+                //break;
+            /*case 2: 
+                System.out.println("Who");
+                /*enemName = metEnemy3.getEnemName(); 
                 eintro = metEnemy3.getEnemIntro();
                 edesc = metEnemy3.getEnemDesc(); 
                 ehp = metEnemy3.hp; 
@@ -160,19 +200,14 @@ public class gameLogic {
                 edmg = metEnemy3.dmg; 
                 elvl = metEnemy3.lvl;
                 exp = metEnemy3.xp; 
-                eisAlive = metEnemy3.isAlive;
-                break;
-            default: 
-                System.out.println("Something has went wrong...");
-                intro();
-                break;
-        }
+                eisAlive = metEnemy3.isAlive; */
+                //break;
+        //}
     }
 
     public void battleScene() {
         random rand = new random(); 
 
-        rand.randomEncounter();
         printEnemStats();
     }
 

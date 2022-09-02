@@ -67,8 +67,7 @@ class main {
         gl.clearConsole();
         inte.printStackTrace();
     }
-    rand.randomEncounter();
-    gl.enemySetter();
+    rand.randomEncounter();;
     gl.battleScene();
 
     }
