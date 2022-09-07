@@ -20,7 +20,6 @@ public class biome {
 
     public void biomeSelect() {
         Scanner scan = new Scanner(System.in);
-        random rand = new random();
 
         switch(mybiome) {
             case METRO:                 

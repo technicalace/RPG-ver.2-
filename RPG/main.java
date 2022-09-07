@@ -1,8 +1,8 @@
 package RPG;
 
 import RPG.srcCode.biome;
+import RPG.srcCode.enemy;
 import RPG.srcCode.gameLogic;
-import RPG.srcCode.random;
 import RPG.srcCode.biome.myBiome;
 
 import java.util.Arrays;
@@ -12,10 +12,10 @@ import java.util.Random;
 import java.util.Scanner;
 
 class main {
+    public static enemy enemy;
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         gameLogic gl = new gameLogic(); 
-        random rand = new random();
         int randElements = 3;
 
         // enemy lists 
@@ -67,9 +67,8 @@ class main {
         gl.clearConsole();
         inte.printStackTrace();
     }
-    rand.randomEncounter();;
+    gl.enemySetter();
     gl.battleScene();
-
     }
     
 }
