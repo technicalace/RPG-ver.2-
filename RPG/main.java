@@ -24,7 +24,7 @@ class main {
         biome bi1 = new biome(myBiome.METRO);
         biome bi2 = new biome(myBiome.MOUNTAINS); 
         biome bi3 = new biome(myBiome.FOREST);
-        biome bi4 = new biome(myBiome.FOREST);
+        biome bi4 = new biome(myBiome.ARTIC);
 
         gl.intro();
         gl.chooseBiome();

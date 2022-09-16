@@ -28,9 +28,21 @@ public class gameLogic {
     enemy metEnemy3 = new enemy("Edged Bat", "The bat flies in!", "You hear flapping in the shadows...", 16, 16, 5, 1, 5, true);
     */
 
-    public enemy me1 = new enemy("King Rat", "The king wants blood!", "You hear loud sqeaking and pitter patters...", 19, 19, 7, 1, 5, true);
-    public enemy me2 = new enemy("Runaway Train", "It's screeching!", "You hear a thump followed by a screech on the tracks...", 23, 23, 8, 1, 5, true);
-    public enemy me3 = new enemy("Edged Bat", "The bat flies in!", "You hear flapping in the shadows...", 16, 16, 5, 1, 5, true);
+    public enemy metEnemy1 = new enemy("King Rat", "The king wants blood!", "You hear loud sqeaking and pitter patters...", 19, 19, 7, 1, 5, true);
+    public enemy metEnemy2 = new enemy("Runaway Train", "It's screeching!", "You hear a thump followed by a screech on the tracks...", 23, 23, 8, 1, 5, true);
+    public enemy metEnemy3 = new enemy("Edged Bat", "The bat flies in!", "You hear flapping in the shadows...", 16, 16, 5, 1, 5, true);
+
+    public enemy mounEnemy1 = new enemy("Raging Goat", "Horns are hornin!", "You hear a scream in the distance...", 17, 17, 6, 1, 5, true);
+    public enemy mounEnemy2 = new enemy("Vicious Cougar", "Growling fiercly!", "You hear growling in the distance...", 18, 18, 8, 1, 5, true);
+    public enemy mounEnemy3 = new enemy("Speeding Vulture", "Flapping it's wings!", "KAAAWK KAAAAWK", 16, 16, 6, 1, 5, true); 
+
+    public enemy forEnemy1 = new enemy("Tangling Vine", "It's wrapping and twirling!", "You see beneath you vines slithering...", 15, 15, 7, 1, 5, true);
+    public enemy forEnemy2 = new enemy("Bangling Monkey", "Scrathing feroucisly", "A bannana hurls towards you!", 15, 15, 6, 1, 5, true);
+    public enemy forEnemy3 = new enemy("Green Slime", "It's goopy!", "You hear sludge up ahead...", 18, 18, 5, 1,5, true);
+
+    public enemy artEnemy1 = new enemy("Raging Penguin", "He's holding a knife!", "You hear some squabbles...", 15, 15, 9, 1, 5, true); 
+    public enemy artEnemy2 = new enemy("Giant Snowman", "He's growling!", "You hear some growling and roaring in the distance...", 20, 20, 8, 1, 5, true); 
+    public enemy artEnemy3 = new enemy("Frantic Seal", "ARR ARR", "You hear shuffling in the distance", 16, 16, 7, 1, 5, true);
 
     public void intro() {
         Scanner scan = new Scanner(System.in);
@@ -85,22 +97,22 @@ public class gameLogic {
 
         switch(enemyNums) {
             case 1: 
-                enemName = me1.name;
-                edesc = me1.getEnemDesc();
-                eintro = me1.getEnemIntro();
-                ehp = me1.hp;
+                enemName = metEnemy1.name;
+                edesc = metEnemy1.getEnemDesc();
+                eintro = metEnemy1.getEnemIntro();
+                ehp = metEnemy1.hp;
                 break;
             case 2: 
-                enemName = me2.name;
-                edesc = me2.getEnemDesc();
-                eintro = me2.getEnemIntro(); 
-                ehp = me2.hp;
+                enemName = metEnemy2.name;
+                edesc = metEnemy2.getEnemDesc();
+                eintro = metEnemy2.getEnemIntro(); 
+                ehp = metEnemy2.hp;
                 break;
             case 3: 
-                enemName = me3.name;
-                edesc = me3.getEnemDesc();
-                eintro = me3.getEnemIntro(); 
-                ehp = me3.hp;
+                enemName = metEnemy3.name;
+                edesc = metEnemy3.getEnemDesc();
+                eintro = metEnemy3.getEnemIntro(); 
+                ehp = metEnemy3.hp;
                 break;
         }
     }
