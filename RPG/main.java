@@ -34,18 +34,22 @@ class main {
         gl.biomeSel = scan.nextInt();
         switch(gl.biomeSel) {
             case 1:
+                gl.biomeNum = 1;
                 gl.clearConsole();
                 bi1.biomeSelect();
                 break;
             case 2: 
+                gl.biomeNum = 2; 
                 gl.clearConsole();
                 bi2.biomeSelect();
                 break;
             case 3: 
+                gl.biomeNum = 3;
                 gl.clearConsole();
                 bi3.biomeSelect();
                 break; 
             case 4: 
+                gl.biomeNum = 4;
                 gl.clearConsole();
                 bi4.biomeSelect();
                 break; 

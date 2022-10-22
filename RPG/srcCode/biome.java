@@ -1,4 +1,5 @@
 package RPG.srcCode;
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -6,6 +7,8 @@ public class biome {
     public int listNume;
     gameLogic gl = new gameLogic();
 	public myBiome mybiome;
+
+    public ArrayList<enemy> enemies = new ArrayList<enemy>();
 
     public biome(myBiome mybiome) {
         this.mybiome = mybiome;
